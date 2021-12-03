@@ -1,3 +1,38 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="mail" slot="start">Awesome Label</ion-icon>
+          <ion-label>inbox</ion-label>
+        </ion-item>
+        <ion-item>
+         <ion-icon name="paper-plane" slot="start">Awesome Label</ion-icon>
+         <ion-label>outbox</ion-label>
+       </ion-item>
+       <ion-item>
+         <ion-icon name="heart" slot="start">Awesome Label</ion-icon>
+         <ion-label>favorites</ion-label>
+       </ion-item>
+       <ion-item>
+         <ion-icon name="heart" slot="start">Awesome Label</ion-icon>
+         <ion-label>archived</ion-label>
+       </ion-item>
+       <ion-item>
+         <ion-icon name="trash" slot="start">Awesome Label</ion-icon>
+         <ion-label>trash</ion-label>
+       </ion-item>
+       <ion-item>
+         <ion-icon name="warning" slot="start">Awesome Label</ion-icon>
+         <ion-label>spam</ion-label>
+       </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+ </ion-app>
